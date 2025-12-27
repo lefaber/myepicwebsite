@@ -25,6 +25,8 @@ a:hover { text-decoration: underline; }
 
 .selected {
 	background-color: var(--primary-color);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 }
 .selected a {
 	color: black;

@@ -41,7 +41,7 @@ button:hover {
 	clip-path: inset(-10px -10px 0px -10px);
 }
 .selected a {
-	color: black;
+	color: var(--secondary-color);
 }
 
 #main-header {

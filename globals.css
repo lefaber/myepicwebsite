@@ -29,3 +29,94 @@ a:hover { text-decoration: underline; }
 .selected a {
 	color: black;
 }
+
+#main-header {
+	font-family: 'Press Start 2P';
+	font-style: bold;
+	margin-top: 1em;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	position: relative;
+}
+#main-header::after {
+	content: " ";
+	display: block;
+	background-color: var(--primary-color);
+	box-shadow: 0 0 5px var(--primary-color);
+	height: 2px;
+	position: absolute;
+	width: 100%;
+	transform: translate(0, 40px);
+}
+
+#portrait {
+	overflow: hidden;
+	width: 256px;
+	height: 256px;
+	border: 10px solid transparent;
+	border-radius: 100%;
+	box-shadow: 0 0 0 2px var(--primary-color);
+	position: relative;
+}
+.portrait-glow::after {
+	content: " ";
+	display; block;
+	position: absolute;
+	width: 280px;
+	height: 280px;
+	box-shadow: 0 0 5px var(--primary-color), inset 0 0 5px 2px var(--primary-color);
+	border-radius: 100%;
+}
+
+/* Thanks Luke Bonaccorsi! */
+.pixel-corners {
+  clip-path: polygon(
+    0px calc(100% - 20px),
+    4px calc(100% - 20px),
+    4px calc(100% - 12px),
+    8px calc(100% - 12px),
+    8px calc(100% - 8px),
+    12px calc(100% - 8px),
+    12px calc(100% - 4px),
+    20px calc(100% - 4px),
+    20px 100%,
+    calc(100% - 20px) 100%,
+    calc(100% - 20px) calc(100% - 4px),
+    calc(100% - 12px) calc(100% - 4px),
+    calc(100% - 12px) calc(100% - 8px),
+    calc(100% - 8px) calc(100% - 8px),
+    calc(100% - 8px) calc(100% - 12px),
+    calc(100% - 4px) calc(100% - 12px),
+    calc(100% - 4px) calc(100% - 20px),
+    100% calc(100% - 20px),
+    100% 20px,
+    calc(100% - 4px) 20px,
+    calc(100% - 4px) 12px,
+    calc(100% - 8px) 12px,
+    calc(100% - 8px) 8px,
+    calc(100% - 12px) 8px,
+    calc(100% - 12px) 4px,
+    calc(100% - 20px) 4px,
+    calc(100% - 20px) 0px,
+    20px 0px,
+    20px 4px,
+    12px 4px,
+    12px 8px,
+    8px 8px,
+    8px 12px,
+    4px 12px,
+    4px 20px,
+    0px 20px
+  );
+}
+
+.retro {
+	background-color: black;
+	background-image: radial-gradient(
+		hsl(from var(--primary-color) h s calc(l - 43)), var(--secondary-color) 120%
+	);
+	height: 100vh;
+}
+
+.box-shadow { box-shadow: 0 0 5px var(--primary-color); }
+.text-shadow { text-shadow: 0 0 5px var(--primary-color); }

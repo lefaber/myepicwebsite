@@ -8,51 +8,53 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
 </head>
-<body>
+<body class="retro text-shadow">
 
 <div style="max-width: 1500px; margin: auto; min-height: 100vh; display: grid; grid-template-rows: auto 1fr auto">
-	<header style="font-family: 'Press Start 2P'; font-style: bold; margin-top: 1em;">
-		<nav style="border-bottom: 1px solid var(--primary-color)">
+	<header id="main-header">
+		<div>
+		</div>
+		<nav>
 			<ul style="display: flex; list-style-type: none; margin: auto; width: fit-content">
-				<li style="margin: 0 1em; padding: 10px;" class="selected"><a href="">Home</a></li>
+				<li style="margin: 0 1em; padding: 10px;" class="selected box-shadow"><a href="">Home</a></li>
 				<li style="margin: 0 1em; padding: 10px;"><a href="">Art</a></li>
-				<li style="margin: 0 1em; padding: 10px;"><a href="">Blog</a></li>
 			</ul>
 		</nav>
+		<div>
+		</div>
 	</header>
 	<main style="display: flex;">
 		<div style="width: 50%">
-			<div style="display: grid; place-items: center; height: 100%; width: 100%;">
-				<div style="overflow: hidden; width: 256px; height: 256px; border: 10px solid var(--secondary-color); border-radius: 100%; box-shadow: 0 0 0 2px var(--primary-color);">
+			<div style="display: grid; place-items: center; height: 100%; width: 100%; position: relative;" class="portrait-glow">
+				<div id="portrait">
 					<img src="media/default_256x256.png" width="256" height="256" style="width: 100%; height: auto;" draggable="false" alt="Panca waving"/>
 				</div>
-				<p style="position: absolute; text-align: center; transform: translate(0, 200px);">
+				<p style="position: absolute; text-align: center; transform: translate(0, 180px);">
 					Heya, my name is Panca! <br/>
-					This is my website. <br/>
-					Yeah!
+					This is my website.
 				</p>
 			</div>
 		</div>
 		<div style="width: 50%">
 			<div style="width: 100%; height: 100%; display: grid; grid-template-columns: 50% 50%; grid-template-rows: repeat(5, 1fr)">
-				<div style="margin: 1em; border-radius: 1em; overflow: hidden;">
-					<div style="width: 100%; height: 100%; background-color: var(--primary-color); color: var(--secondary-color); overflow: hidden; padding: 1em;">
-						<p style="margin: 0;">Informational box!</p>
+				<div style="margin: 1em;">
+					<div style="width: 100%; height: 100%; background-color: var(--primary-color); color: var(--secondary-color); overflow: hidden; padding: 1em; box-shadow: 0 0 5px var(--primary-color); box-sizing: border-box;" class="pixel-corners">
+						<p style="margin: 0; font-family: 'Press Start 2P'; ">Informational<br/> box!</p>
 					</div>
 				</div>
-				<div style="margin: 1em; border-radius: 1em; grid-row: span 2; overflow: hidden;">
+				<div style="margin: 1em; grid-row: span 2; overflow: hidden;" class="pixel-corners">
 					<div style="width: 100%; height: 100%; background-size: cover; background-position: center center; background-image: url(media/art/yerurie.png);"></div>
 				</div>
-				<div style="margin: 1em; border-radius: 1em; grid-row: span 2; overflow: hidden;">
+				<div style="margin: 1em; grid-row: span 2; overflow: hidden;" class="pixel-corners">
 					<div style="width: 100%; height: 100%; background-size: cover; background-position: center center; background-image: url(media/art/kainoh.png);"></div>
 				</div>
-				<div style="margin: 1em; border-radius: 1em; grid-row: span 2; overflow: hidden;">
+				<div style="margin: 1em; grid-row: span 2; overflow: hidden;" class="pixel-corners">
 					<div style="width: 100%; height: 100%; background-size: cover; background-position: center center; background-image: url(media/art/portrait.png);"></div>
 				</div>
-				<div style="margin: 1em; border-radius: 1em; grid-row: span 2; overflow: hidden;">
+				<div style="margin: 1em; grid-row: span 2; overflow: hidden;" class="pixel-corners">
 					<div style="width: 100%; height: 100%; background-size: cover; background-position: center center; background-image: url(media/art/concept.png);"></div>
 				</div>
-				<div style="margin: 1em; border-radius: 1em; overflow: hidden;">
+				<div style="margin: 1em; overflow: hidden;" class="pixel-corners">
 					<div style="width: 100%; height: 100%; background-size: cover; background-position: center center; background-image: url(media/art/deposit.png);"></div>
 				</div>
 			</div>

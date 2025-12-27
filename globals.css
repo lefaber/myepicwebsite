@@ -1,5 +1,5 @@
 :root {
-	--primary-color: aqua;
+	--primary-color: aqua /*aqua*/;
 	--secondary-color: black;
 }
 
@@ -55,19 +55,23 @@ a:hover { text-decoration: underline; }
 	overflow: hidden;
 	width: 256px;
 	height: 256px;
-	border: 10px solid transparent;
 	border-radius: 100%;
-	box-shadow: 0 0 0 2px var(--primary-color);
 	position: relative;
+	background-color: var(--primary-color);
 }
 .portrait-glow::after {
 	content: " ";
 	display; block;
 	position: absolute;
+	border: 2px solid var(--primary-color);
 	width: 280px;
 	height: 280px;
-	box-shadow: 0 0 5px var(--primary-color), inset 0 0 5px 2px var(--primary-color);
+	box-shadow: 0 0 5px var(--primary-color), inset 0 0 5px var(--primary-color);
 	border-radius: 100%;
+}
+#portrait img {
+	filter: grayscale(100%);
+	mix-blend-mode: luminosity;
 }
 
 /* Thanks Luke Bonaccorsi! */
@@ -115,7 +119,7 @@ a:hover { text-decoration: underline; }
 .retro {
 	background-color: black;
 	background-image: radial-gradient(
-		hsl(from var(--primary-color) h s calc(l - 43)), var(--secondary-color) 120%
+		hsl(from var(--primary-color) h s calc(l - 42)), var(--secondary-color) 120%
 	);
 	height: 100vh;
 }

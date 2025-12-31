@@ -10,6 +10,10 @@ body {
 	background-color: black;
 }
 
+.main-box {
+	display: flex;
+}
+
 ::selection {
 	background-color: var(--primary-color);
 	color: var(--secondary-color);
@@ -161,6 +165,13 @@ button:hover {
 
 @media screen and (max-width: 1500px) {
 	.art-gallery { grid-template-columns: repeat(3, 1fr); }
+	.main-box {
+		flex-direction: column;
+	}
+	.main-box > div {
+		padding: 4em;
+		box-sizing: border-box;
+	}
 }
 @media screen and (max-width: 1125px) {
 	.art-gallery { grid-template-columns: repeat(2, 1fr); }

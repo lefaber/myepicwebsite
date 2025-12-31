@@ -3,6 +3,7 @@
 <head>
 	<title>pancatime</title> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="globals.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,39 +28,41 @@
 			<button style="float: right; margin-top: 10px; margin-right: 10px;" class="box-shadow" id="button-color">aqua</button>
 		</div>
 	</header>
-	<main style="display: flex;">
-		<div style="width: 50%">
-			<div style="display: grid; place-items: center; height: 100%; width: 100%; position: relative;" class="portrait-glow">
-				<div id="portrait" class="box-shadow">
-					<img src="media/default_256x256.png" width="256" height="256" style="width: 100%; height: auto;" draggable="false" alt="Panca waving"/>
-				</div>
-				<p style="position: absolute; text-align: center; transform: translate(0, 180px);">
-					Heya, my name is Panca! <br/>
-					This is my website.
-				</p>
-			</div>
-		</div>
-		<div style="width: 50%">
-			<div style="width: 100%; height: 100%; display: grid; grid-template-columns: 50% 50%; grid-template-rows: repeat(5, 1fr);">
-				<div style="margin: 1em;">
-					<div style="width: 100%; height: 100%; background-color: var(--primary-color); color: var(--secondary-color); overflow: hidden; padding: 1em; box-shadow: 0 0 5px var(--primary-color); box-sizing: border-box; border-radius: 5px;">
-						<p style="margin: 0; font-family: 'Press Start 2P';">Informational<br/> box!</p>
+	<main>
+		<div class="main-box">
+			<div style="width: 100%">
+				<div style="display: grid; place-items: center; height: 100%; width: 100%; position: relative;" class="portrait-glow">
+					<div id="portrait" class="box-shadow">
+						<img src="media/default_256x256.png" width="256" height="256" style="width: 100%; height: auto;" draggable="false" alt="Panca waving"/>
 					</div>
+					<p style="position: absolute; text-align: center; transform: translate(0, 180px);">
+						Heya, my name is Panca! <br/>
+						This is my website.
+					</p>
 				</div>
-				<div style="margin: 1em; grid-row: span 2; overflow: hidden; border-radius: 10px;">
-					<div style="width: 100%; height: 100%; background-size: cover; background-position: center center; background-image: url(media/art/yerurie.png);"></div>
-				</div>
-				<div style="margin: 1em; grid-row: span 2; overflow: hidden; border-radius: 10px;">
-					<div style="width: 100%; height: 100%; background-size: cover; background-position: center center; background-image: url(media/art/kainoh.png);"></div>
-				</div>
-				<div style="margin: 1em; grid-row: span 2; overflow: hidden; border-radius: 10px;">
-					<div style="width: 100%; height: 100%; background-size: cover; background-position: center center; background-image: url(media/art/portrait.png);"></div>
-				</div>
-				<div style="margin: 1em; grid-row: span 2; overflow: hidden; border-radius: 10px;">
-					<div style="width: 100%; height: 100%; background-size: cover; background-position: center center; background-image: url(media/art/concept.png);"></div>
-				</div>
-				<div style="margin: 1em; overflow: hidden; border-radius: 10px;">
-					<div style="width: 100%; height: 100%; background-size: cover; background-position: center center; background-image: url(media/art/deposit.png);"></div>
+			</div>
+			<div style="width: 100%">
+				<div style="width: 100%; height: 100%; display: grid; grid-template-columns: 50% 50%; grid-template-rows: repeat(5, 1fr);">
+					<div style="margin: 1em;">
+						<div style="width: 100%; height: 100%; background-color: var(--primary-color); color: var(--secondary-color); overflow: hidden; padding: 1em; box-shadow: 0 0 5px var(--primary-color); box-sizing: border-box; border-radius: 5px;">
+							<p style="margin: 0; font-family: 'Press Start 2P';">Informational<br/> box!</p>
+						</div>
+					</div>
+					<div style="margin: 1em; grid-row: span 2; overflow: hidden; border-radius: 10px;">
+						<div style="width: 100%; height: 100%; background-size: cover; background-position: center center; background-image: url(media/art/yerurie.png);"></div>
+					</div>
+					<div style="margin: 1em; grid-row: span 2; overflow: hidden; border-radius: 10px;">
+						<div style="width: 100%; height: 100%; background-size: cover; background-position: center center; background-image: url(media/art/kainoh.png);"></div>
+					</div>
+					<div style="margin: 1em; grid-row: span 2; overflow: hidden; border-radius: 10px;">
+						<div style="width: 100%; height: 100%; background-size: cover; background-position: center center; background-image: url(media/art/portrait.png);"></div>
+					</div>
+					<div style="margin: 1em; grid-row: span 2; overflow: hidden; border-radius: 10px;">
+						<div style="width: 100%; height: 100%; background-size: cover; background-position: center center; background-image: url(media/art/concept.png);"></div>
+					</div>
+					<div style="margin: 1em; overflow: hidden; border-radius: 10px;">
+						<div style="width: 100%; height: 100%; background-size: cover; background-position: center center; background-image: url(media/art/deposit.png);"></div>
+					</div>
 				</div>
 			</div>
 		</div>

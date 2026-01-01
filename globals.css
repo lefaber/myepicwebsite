@@ -11,7 +11,10 @@ body {
 }
 
 .main-box {
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	height: 100%;
 }
 
 ::selection {

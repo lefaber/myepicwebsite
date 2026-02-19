@@ -5,16 +5,9 @@
 
 body {
 	font-family: Verdana, sans-serif;
-	font-size: large;
+	font-size: larger;
 	color: var(--primary-color);
 	background-color: black;
-}
-
-.main-box {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: auto;
-	height: 100%;
 }
 
 ::selection {
@@ -23,7 +16,6 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Press Start 2P", system-ui;
 	font-weight: 400;
 	font-style: normal;
 }
@@ -48,9 +40,7 @@ button:hover {
 
 .selected {
 	background-color: var(--primary-color);
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-	clip-path: inset(-10px -10px 0px -10px);
+	border-radius: 5px;
 }
 .selected a {
 	color: var(--secondary-color);
@@ -83,8 +73,8 @@ button:hover {
 
 #portrait {
 	overflow: hidden;
-	width: 256px;
-	height: 256px;
+	width: 200px;
+	height: 200px;
 	border-radius: 100%;
 	position: relative;
 	background-color: var(--primary-color);
@@ -94,8 +84,8 @@ button:hover {
 	display; block;
 	position: absolute;
 	border: 2px solid var(--primary-color);
-	width: 280px;
-	height: 280px;
+	width: 220px;
+	height: 220px;
 	box-shadow: 0 0 5px var(--primary-color), inset 0 0 5px var(--primary-color);
 	border-radius: 100%;
 }
@@ -154,9 +144,9 @@ button:hover {
 	height: 100vh;
 }
 
-.box-shadow { box-shadow: 0 0 5px var(--primary-color); }
-.text-shadow { text-shadow: 0 0 5px var(--primary-color); }
-.box-shadow-secondary { box-shadow: 0 0 5px var(--secondary-color); }
+.box-shadow { box-shadow: 0 0 3px var(--primary-color); }
+.text-shadow { text-shadow: 0 0 3px var(--primary-color); }
+.box-shadow-secondary { box-shadow: 0 0 3px var(--secondary-color); }
 
 .art-gallery {
 	display: grid;
@@ -168,13 +158,6 @@ button:hover {
 
 @media screen and (max-width: 1500px) {
 	.art-gallery { grid-template-columns: repeat(3, 1fr); }
-	.main-box {
-		flex-direction: column;
-	}
-	.main-box > div {
-		padding: 4em;
-		box-sizing: border-box;
-	}
 }
 @media screen and (max-width: 1125px) {
 	.art-gallery { grid-template-columns: repeat(2, 1fr); }

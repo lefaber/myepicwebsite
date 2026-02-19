@@ -13,16 +13,16 @@
 </head>
 <body class="retro text-shadow">
 
-<div style="max-width: 1500px; margin: auto; min-height: 100vh; display: grid; grid-template-rows: auto 1fr auto">
-	<header>
+<div style="max-width: 1500px; margin: auto; min-height: 100vh;">
+	<header style="position: absolute;">
 			<h1 style="font-size: larger; padding: 20px; margin: 0;">pancatime <button class="box-shadow" id="button-color">aqua</button></h1>
 	</header>
-	<main>
+	<main style="height: 100vh">
 		<div style="display: grid; place-items: center; height: 100%; width: 100%; position: relative;" class="portrait-glow">
 			<div id="portrait" class="box-shadow">
 				<img src="media/default_256x256.png" width="256" height="256" style="width: 100%; height: auto;" draggable="false" alt="Panca waving"/>
 			</div>
-			<nav style="position: absolute; text-align: center; transform: translate(180px, 0);">
+			<nav id="front-page-menu">
 				<ul style="list-style-type: none; font-size: larger;">
 					<!--<li style="padding: 10px;" class="selected box-shadow"><a href="index.html">Home</a></li>-->
 					<li style="padding: 10px;"><a href="art.html">Art</a></li>
@@ -31,9 +31,9 @@
 			</nav>
 		</div>
 	</main>
-    <footer>
-        <span style="text-align: center; display: block; margin-bottom: 1em;">Copyright 2026 © Panca</span>
-    </footer>
+	<footer style="position: absolute; bottom: 0; left: 0; right: 0;">
+			<span style="text-align: center; display: block; margin-bottom: 1em;">Copyright 2026 © Panca</span>
+	</footer>
 </div>
 
 <!-- the inner workings of my mind are an enigma. I thinks therefore I ams. I have no freaking idea! -->

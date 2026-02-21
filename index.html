@@ -2,8 +2,8 @@
 <html>
 <head>
 	<title>Pancatime</title> 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="globals.css">
 	<script src="button_color.js"></script>
@@ -11,9 +11,8 @@
 <body class="retro text-shadow">
 
 <div style="max-width: 1500px; margin: auto; min-height: 100vh;">
-	<header style="position: absolute; padding: 20px; z-index: 2">
+	<header class="main-header" style="position: absolute; z-index: 1">
 		<h1>pancatime</h1>
-		<button class="button box-shadow" id="button-color">aqua</button>
 	</header>
 	<main style="height: 100vh">
 		<div style="display: grid; place-items: center; height: 100%; width: 100%; position: relative;" class="portrait-glow">
@@ -21,11 +20,12 @@
 				<img src="media/default_256x256.png" width="256" height="256" style="width: 100%; height: auto;" draggable="false" alt="Panca waving"/>
 			</div>
 			<nav id="front-page-menu">
-				<ul style="list-style-type: none; font-size: larger;">
+				<ul style="list-style-type: none;">
 					<li style="padding: 10px;"><a class="menu-item" href="art.html">art</a></li>
 					<li style="padding: 10px;"><a class="menu-item" href="blog.html">blog</a></li>
 				</ul>
 			</nav>
+			<button style="position: absolute; transform: translate(-200px, 0);" class="button box-shadow" id="button-color">aqua</button>
 		</div>
 	</main>
 	<footer style="position: absolute; bottom: 0; left: 0; right: 0;">

@@ -13,6 +13,7 @@ body {
 ::selection {
 	background-color: var(--primary-color);
 	color: var(--secondary-color);
+	text-decoration-color: var(--secondary-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,6 +28,13 @@ a {
 article a:hover {
 	text-decoration: underline;
 	text-decoration-thickness: 2px;
+}
+
+.main-header { padding: 20px; }
+.main-header > h1 {
+	height: 128px;
+	margin: 0;
+	padding: 0;
 }
 
 .button {
@@ -47,9 +55,11 @@ article a:hover {
 	background-color: transparent;
 	color: var(--primary-color);
 	display: block;
+	width: fit-content;
   padding: 3px 16px;
 	position: relative;
 	text-align: left;
+	text-decoration: none;
 	-webkit-transition: 0.2s;
   -moz-transition: 0.2s;
   transition: 0.2s;
@@ -72,37 +82,10 @@ article a:hover {
 	box-shadow: 0 0 3px var(--primary-color);
 }
 
-.selected {
-	background-color: var(--primary-color);
-	border-radius: 5px;
-}
-.selected a {
-	color: var(--secondary-color);
-}
-
 .text-ellipsis {
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
-}
-
-#main-header {
-	font-family: 'Press Start 2P';
-	font-style: bold;
-	margin-top: 1em;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	position: relative;
-}
-#main-header::after {
-	content: " ";
-	display: block;
-	background-color: var(--primary-color);
-	box-shadow: 0 0 5px var(--primary-color);
-	height: 2px;
-	position: absolute;
-	width: 100%;
-	transform: translate(0, 40px);
 }
 
 #portrait {
@@ -143,8 +126,8 @@ article a:hover {
 	background-attachment: fixed;
 }
 
-.box-shadow { box-shadow: 0 0 3px var(--primary-color); }
 .text-shadow { text-shadow: 0 0 3px var(--primary-color); }
+.box-shadow { box-shadow: 0 0 3px var(--primary-color); }
 .box-shadow-secondary { box-shadow: 0 0 3px var(--secondary-color); }
 
 .art-gallery {
@@ -183,7 +166,26 @@ article a:hover {
 	display: block;
 	margin: auto;
 }
-.art-box a {
+a {
 	text-decoration: underline;
 	text-decoration-thickness: 2px;
+}
+
+.blog-list {
+	list-style-type: none;
+	margin: 4em 0;
+	max-width: 750px;
+}
+.blog-list a {
+	display: block;
+	margin-bottom: 8px;
+	margin-top: 1em;
+}
+.blog-list span {
+	font-size: smaller;
+}
+
+.blog-post {
+	padding: 40px;
+	max-width: 750px;
 }

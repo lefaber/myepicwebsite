@@ -5,7 +5,7 @@
 
 body {
 	font-family: Verdana, sans-serif;
-	font-size: larger;
+	font-size: x-large;
 	color: var(--primary-color);
 	background-color: black;
 }
@@ -140,6 +140,7 @@ article a:hover {
 		hsl(from var(--primary-color) h s calc(l - 42)), var(--secondary-color) 120%
 	);
 	height: 100vh;
+	background-attachment: fixed;
 }
 
 .box-shadow { box-shadow: 0 0 3px var(--primary-color); }
@@ -184,4 +185,5 @@ article a:hover {
 }
 .art-box a {
 	text-decoration: underline;
+	text-decoration-thickness: 2px;
 }

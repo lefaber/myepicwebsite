@@ -10,6 +10,16 @@ body {
 	background-color: black;
 }
 
+.wrapper {
+	max-width: 1500px;
+	margin: auto;
+	min-height: 100vh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	padding: 0 1em;
+	box-sizing: border-box;
+}
+
 ::selection {
 	background-color: var(--primary-color);
 	color: var(--secondary-color);
@@ -21,6 +31,10 @@ h1, h2, h3, h4, h5, h6 {
 	font-style: normal;
 }
 
+p {
+	line-height: 1.5;
+}
+
 a {
 	color: var(--primary-color);
 	text-decoration: none;
@@ -30,9 +44,9 @@ article a:hover {
 	text-decoration-thickness: 2px;
 }
 
-.main-header { padding: 20px; }
+.main-header { padding: 1em 0; }
 .main-header > h1 {
-	height: 128px;
+	line-height: 128px;
 	margin: 0;
 	padding: 0;
 }
@@ -147,6 +161,7 @@ article a:hover {
 @media screen and (max-width: 750px) {
 	.art-gallery { grid-template-columns: repeat(1, 1fr); }
 	#front-page-menu { transform: translate(0, 180px); }
+	#front-page-menu > ul { display: flex; }
 }
 
 .art-box {
@@ -174,6 +189,7 @@ a {
 .blog-list {
 	list-style-type: none;
 	margin: 4em 0;
+	padding: 0;
 	max-width: 750px;
 }
 .blog-list a {
@@ -186,6 +202,6 @@ a {
 }
 
 .blog-post {
-	padding: 40px;
+	padding-top: 40px;
 	max-width: 750px;
 }

@@ -1,75 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>pancatime</title> 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pancatime</title> 
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="globals.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
 	<script src="button_color.js"></script>
 </head>
 <body class="retro text-shadow">
 
-<div style="max-width: 1500px; margin: auto; min-height: 100vh; display: grid; grid-template-rows: auto 1fr auto">
-	<header id="main-header">
-		<div>
-			<h1 style="font-size: large; padding: 10px; margin: 0;">pancatime</h1>
-		</div>
-		<nav>
-			<ul style="display: flex; list-style-type: none; margin: auto; width: fit-content">
-				<li style="margin: 0 1em; padding: 10px;" class="selected box-shadow"><a href="index.html">Home</a></li>
-				<li style="margin: 0 1em; padding: 10px;"><a href="art.html">Art</a></li>
-			</ul>
-		</nav>
-		<div>
-			<button style="float: right; margin-top: 10px; margin-right: 10px;" class="box-shadow" id="button-color">aqua</button>
-		</div>
+<div class="wrapper" style="grid-template-rows: auto;">
+	<header class="main-header" style="position: absolute; z-index: 1">
+		<h1>pancatime</h1>
 	</header>
-	<main>
-		<div class="main-box">
-			<div>
-				<div style="display: grid; place-items: center; height: 100%; width: 100%; position: relative;" class="portrait-glow">
-					<div id="portrait" class="box-shadow">
-						<img src="media/default_256x256.png" width="256" height="256" style="width: 100%; height: auto;" draggable="false" alt="Panca waving"/>
-					</div>
-					<p style="position: absolute; text-align: center; transform: translate(0, 180px);">
-						Heya, my name is Panca! <br/>
-						This is my website.
-					</p>
-				</div>
+	<main style="height: 100vh">
+		<div style="display: grid; place-items: center; height: 100%; width: 100%; position: relative;" class="portrait-glow">
+			<div id="portrait" class="box-shadow">
+				<img src="media/default_256x256.png" width="256" height="256" style="width: 100%; height: auto;" draggable="false" alt="Panca waving"/>
 			</div>
-			<div>
-				<div style="width: 100%; height: 100%; display: grid; grid-template-columns: 50% 50%; grid-template-rows: repeat(5, 1fr);">
-					<div style="margin: 1em;">
-						<div style="width: 100%; height: 100%; background-color: var(--primary-color); color: var(--secondary-color); overflow: hidden; padding: 1em; box-shadow: 0 0 5px var(--primary-color); box-sizing: border-box; border-radius: 5px;">
-							<p style="margin: 0; font-family: 'Press Start 2P';">Informational<br/> box!</p>
-						</div>
-					</div>
-					<div style="margin: 1em; grid-row: span 2; overflow: hidden; border-radius: 10px;">
-						<div style="width: 100%; height: 100%; background-size: cover; background-position: center center; background-image: url(media/art/yerurie.png);"></div>
-					</div>
-					<div style="margin: 1em; grid-row: span 2; overflow: hidden; border-radius: 10px;">
-						<div style="width: 100%; height: 100%; background-size: cover; background-position: center center; background-image: url(media/art/kainoh.png);"></div>
-					</div>
-					<div style="margin: 1em; grid-row: span 2; overflow: hidden; border-radius: 10px;">
-						<div style="width: 100%; height: 100%; background-size: cover; background-position: center center; background-image: url(media/art/portrait.png);"></div>
-					</div>
-					<div style="margin: 1em; grid-row: span 2; overflow: hidden; border-radius: 10px;">
-						<div style="width: 100%; height: 100%; background-size: cover; background-position: center center; background-image: url(media/art/concept.png);"></div>
-					</div>
-					<div style="margin: 1em; overflow: hidden; border-radius: 10px;">
-						<div style="width: 100%; height: 100%; background-size: cover; background-position: center center; background-image: url(media/art/deposit.png);"></div>
-					</div>
-				</div>
-			</div>
+			<nav id="front-page-menu">
+				<ul style="list-style-type: none;">
+					<li style="padding: 10px;"><a class="menu-item" href="art.html">art</a></li>
+					<li style="padding: 10px;"><a class="menu-item" href="blog.html">blog</a></li>
+				</ul>
+			</nav>
+			<button style="position: absolute; transform: translate(-200px, 0);" class="button box-shadow" id="button-color">aqua</button>
 		</div>
 	</main>
-    <footer>
-        <span style="font-family: 'Press Start 2P'; font-style: bold; text-align: center; display: block; margin-bottom: 1em;">Copyright 2026 © Panca</span>
-    </footer>
+	<footer style="position: absolute; bottom: 0; left: 0; right: 0;">
+			<span style="text-align: center; display: block; margin-bottom: 1em;">Copyright 2026 © Panca</span>
+	</footer>
 </div>
 
 <!-- the inner workings of my mind are an enigma. I thinks therefore I ams. I have no freaking idea! -->

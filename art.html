@@ -1,37 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>pancatime | art</title> 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Art</title> 
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="globals.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
-	<script src="button_color.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body class="retro text-shadow">
 
-<div style="max-width: 1500px; margin: auto; min-height: 100vh; display: grid; grid-template-rows: auto 1fr auto">
-	<header id="main-header">
-		<div style="overflow: hidden;">
-			<h1 style="font-size: large; padding: 10px; margin: 0;" class="text-ellipsis">pancatime > art</h1>
-		</div>
-		<nav>
-			<ul style="display: flex; list-style-type: none; margin: auto; width: fit-content">
-				<li style="margin: 0 1em; padding: 10px;"><a href="index.html">Home</a></li>
-				<li style="margin: 0 1em; padding: 10px;" class="selected box-shadow"><a href="art.html">Art</a></li>
-			</ul>
-		</nav>
-		<div>
-			<button style="float: right; margin-top: 10px; margin-right: 10px;" class="box-shadow" id="button-color">aqua</button>
-		</div>
+<div class="wrapper">
+	<header class="main-header">
+		<h1>art</h1>
+		<nav><a class="menu-item" href="index.html">back</a></nav>
 	</header>
 	<main>
 		<div class="art-gallery">
 			<div class="art-box">
-				<div><a href="media/art/concept.png" target="_blank"><img src="media/art/concept.png" width="300" height="300" alt="Concept art"/></a></div>
+				<div>
+					<a href="media/art/concept.png" target="_blank">
+						<img src="media/art/concept.png" width="300" height="300" alt="Concept art"/>
+					</a>
+				</div>
 				<span class="text-ellipsis">Concept art</span>
 			</div>
 			<div class="art-box">
@@ -57,7 +48,7 @@
 		</div>
 	</main>
     <footer>
-        <span style="font-family: 'Press Start 2P'; font-style: bold; text-align: center; display: block; margin-bottom: 1em;">Copyright 2026 © Panca</span>
+        <span style="font-style: bold; text-align: center; display: block; margin-bottom: 1em;">Copyright 2026 © Panca</span>
     </footer>
 </div>
 

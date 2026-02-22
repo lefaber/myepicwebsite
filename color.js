@@ -29,27 +29,22 @@ function next_index() {
 	save_index(index);
 }
 
-function update_color(root, button) {
-	root.style.setProperty('--primary-color', colors[index]);
-	button.innerHTML = colors[index];
-}
-
 function change_color(root, button) {
 	next_index();
-	update_color(root, button);
-}
-
-function set_saved_color(root, button) {
-	update_index_from_storage();
-	update_color(root, button);
+	root.style.setProperty('--primary-color', colors[index]);
+	button.innerHTML = colors[index];
 }
 
 window.addEventListener('DOMContentLoaded', (event) => {
 	let button = document.querySelector('#button-color');
 	let root = document.querySelector(':root');
 
-	set_saved_color(root, button);
+	update_index_from_storage();
+	root.style.setProperty('--primary-color', colors[index]);
 
-	button.addEventListener('click', () => change_color(root, button));
+	if (button) {
+		button.innerHTML = colors[index];
+		button.addEventListener('click', () => change_color(root, button));
+	}
 });
 

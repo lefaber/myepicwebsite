@@ -1,5 +1,5 @@
 :root {
-	--primary-color: aqua /*aqua*/;
+	--primary-color: aqua;
 	--secondary-color: black;
 }
 
@@ -65,18 +65,23 @@ article a:hover {
 	cursor: pointer;
 }
 
+#button-color {
+    position: absolute;
+    transform: translate(-200px, 0);
+}
+
 .menu-item {
 	background-color: transparent;
 	color: var(--primary-color);
 	display: block;
 	width: fit-content;
-  padding: 3px 16px;
+    padding: 3px 16px;
 	position: relative;
 	text-align: left;
 	text-decoration: none;
 	-webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  transition: 0.2s;
+    -moz-transition: 0.2s;
+    transition: 0.2s;
 }
 .menu-item:hover {
 	box-shadow: inset 64px 0 32px -64px var(--primary-color);
@@ -202,9 +207,10 @@ a {
 	.art-gallery { grid-template-columns: repeat(2, 1fr); }
 }
 @media screen and (max-width: 750px) {
-	.art-gallery { grid-template-columns: repeat(1, 1fr); }
-	#front-page-menu { transform: translate(0, 180px); }
+	.art-gallery          { grid-template-columns: repeat(1, 1fr); }
+	#front-page-menu      { transform: translate(0, 180px); }
 	#front-page-menu > ul { display: flex; }
+    #button-color         { transform: translate(0, 280px); }
 }
 
 .resizable-image {

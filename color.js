@@ -1,4 +1,4 @@
-let colors = ["aqua", "orange", "lime", "fuchsia", "gold"];
+let colors = ["aqua", "orange", "lime"];
 let index = 0;
 const key = "primary_color_index";
 const storage_is_supported = typeof(Storage) !== "undefined";

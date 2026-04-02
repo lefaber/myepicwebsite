@@ -114,11 +114,14 @@ article a:hover {
 	overflow: hidden;
 	width: 200px;
 	height: 200px;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
 	border-radius: 100%;
 	position: relative;
 	background-color: var(--primary-color);
 }
-.portrait-glow::after {
+.portrait-glow::before {
 	content: " ";
 	display; block;
 	position: absolute;
@@ -208,6 +211,7 @@ a {
 }
 .blog-list span {
 	font-size: smaller;
+    opacity: 0.75;
 }
 
 .blog-post {

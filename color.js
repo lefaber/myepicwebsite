@@ -18,9 +18,7 @@ function update_index_from_storage() {
 			save_index(0);
 		}
 		
-	} else {
-		console.log("Local storage not supported.");
-	}
+	} else { console.log("Local storage not supported."); }
 }
 
 function next_index() {
@@ -29,22 +27,21 @@ function next_index() {
 	save_index(index);
 }
 
-function change_color(root, button) {
+function change_color(root, main_title) {
 	next_index();
 	root.style.setProperty('--primary-color', colors[index]);
-	button.innerHTML = colors[index];
+	main_title.innerHTML = colors[index]+"-time";
 }
 
 window.addEventListener('DOMContentLoaded', (event) => {
-	let button = document.querySelector('#button-color');
+    let main_title = document.querySelector('.main-header').getElementsByTagName('h1')[0];
+    let portrait = document.getElementById('portrait');
 	let root = document.querySelector(':root');
 
 	update_index_from_storage();
 	root.style.setProperty('--primary-color', colors[index]);
 
-	if (button) {
-		button.innerHTML = colors[index];
-		button.addEventListener('click', () => change_color(root, button));
-	}
+    if (main_title && portrait) {
+        portrait.addEventListener('click', () => change_color(root, main_title))
+    }
 });
-

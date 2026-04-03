@@ -60,17 +60,12 @@ article a:hover {
 	display: block;
 	border: 1px solid var(--primary-color);
 	border-radius: 10px;
-  width: fit-content;
+    width: fit-content;
 	padding: 3px 6px;
 	box-shadow: 0 0 5px var(--primary-color), inset 0 0 5px var(--primary-color);
 }
 .button:hover {
 	cursor: pointer;
-}
-
-#button-color {
-    position: absolute;
-    transform: translate(-200px, 0);
 }
 
 .menu-item {
@@ -231,7 +226,6 @@ a {
 	.art-gallery          { grid-template-columns: repeat(1, 1fr); }
 	#front-page-menu      { transform: translate(0, 180px); }
 	#front-page-menu > ul { display: flex; }
-    #button-color         { transform: translate(0, 280px); }
 }
 
 .resizable-image {

@@ -1,3 +1,7 @@
+<!--
+pubdate;title;description
+Wed, 22 Feb 2026 12:00:00 +0200;Having a Voice on the Internet;The first blog post on this website.
+-->
 <h1>Having a Voice on the Internet</h1>
 
 <p>

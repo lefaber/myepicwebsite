@@ -1,3 +1,7 @@
+<!--
+pubdate;title;description
+Tue, 10 Mar 2026 12:00:00 +0200;I Will Not Use AI for Creative Projects;Just a short announcement, a sort of "vow" going forward.
+-->
 <h1>I Will Not Use AI for Creative Projects</h1>
 
 <p>

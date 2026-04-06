@@ -1,3 +1,7 @@
+<!--
+pubdate;title;description
+Sun, 15 Mar 2026 12:00:00 +0200;Devblog: Start of "Grenade Jumper" Game;I made something in Godot and I want to show it off. It's not much at the moment, but I'm eager to work on it and maybe it can become something really cool.
+-->
 <h1>Devblog: Start of "Grenade Jumper" Game</h1>
 
 <img src="../media/blog/260315-2105.png" alt="Devblog" width="800" class="resizable-image">

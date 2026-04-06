@@ -11,11 +11,11 @@ template2=${in_dir}template2.html
 
 for md_file in ${in_dir}*.md
 do
-    echo "Processing: ${md_file}."
-    file_name="${md_file#$in_dir}"
-    new_file=${out_dir}${file_name%.md}.html
-    cat $template1 $md_file $template2 > $new_file
-    echo "Out: ${new_file}"
+	echo "Processing: ${md_file}."
+	file_name="${md_file#$in_dir}"
+	new_file=${out_dir}${file_name%.md}.html
+	cat $template1 $md_file $template2 > $new_file
+	echo "Out: ${new_file}"
 done
 
 echo "Done."

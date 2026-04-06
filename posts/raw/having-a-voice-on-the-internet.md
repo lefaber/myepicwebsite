@@ -1,29 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Devblog: Start of "Grenade Jumper" Game</title> 
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- styles -->
-	<link rel="stylesheet" href="../normalize.css">
-	<link rel="stylesheet" href="../globals.css">
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-    <link rel="manifest" href="../site.webmanifest">
-    <!-- js -->
-	<script src="../color.js"></script>
-</head>
-<body class="retro text-shadow">
-
-<div class="wrapper">
-	<header class="main-header" style="margin-top: 128px;">
-		<nav><a class="menu-item" href="../blog.html">back</a></nav>
-	</header>
-	<main>
-		<article class="blog-post">
-
 <h1>Having a Voice on the Internet</h1>
 
 <p>
@@ -49,11 +23,3 @@ A blog can also serve as a sort of diary where you get to re-visit ideas you had
 <p>Feb 22, 2026</p>
 
 <p>/panca</p>
-
-        </article>
-	</main>
-</div>
-
-</body>
-</html>
-

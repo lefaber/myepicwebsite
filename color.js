@@ -30,7 +30,7 @@ function next_index() {
 function change_color(root, main_title) {
 	next_index();
 	root.style.setProperty('--primary-color', colors[index]);
-	main_title.innerHTML = colors[index]+"-time";
+	main_title.innerHTML = "little "+colors[index]+" creature";
 }
 
 window.addEventListener('DOMContentLoaded', (event) => {

@@ -8,9 +8,6 @@ body {
 	font-size: x-large;
 	color: var(--primary-color);
 	background-color: black;
-    background-image:
-        linear-gradient(to right, grey 1px, transparent 1px),
-        linear-gradient(to bottom, grey 1px, transparent 1px);
 }
 
 .wrapper {
@@ -77,26 +74,11 @@ article a:hover {
 	position: relative;
 	text-align: left;
 	text-decoration: none;
+
+	/* animation stuff */
 	-webkit-transition: 0.2s;
     -moz-transition: 0.2s;
     transition: 0.2s;
-}
-.menu-item:hover {
-	box-shadow: inset 64px 0 32px -64px var(--primary-color);
-	border-radius: 3px;
-}
-.menu-item::before {
-	content: " ";
-	z-index: -1;
-	display; block;
-	position: absolute;
-	background-color: var(--primary-color);
-	border-radius: 10px;
-	width: 3px;
-	height: 100%;
-	left: 0;
-	top: 0;
-	box-shadow: 0 0 3px var(--primary-color);
 }
 
 .text-ellipsis {
@@ -123,12 +105,7 @@ article a:hover {
 	border: 3px solid var(--primary-color);
 	width: 220px;
 	height: 220px;
-	box-shadow: 0 0 3px var(--primary-color), inset 0 0 3px var(--primary-color);
 	border-radius: 100%;
-}
-#portrait img {
-	filter: grayscale(100%);
-	mix-blend-mode: luminosity;
 }
 
 #front-page-menu {
@@ -136,33 +113,6 @@ article a:hover {
 	text-align: center;
 	transform: translate(180px, 0);
 }
-
-.retro {
-	background-color: black;
-	background-image: radial-gradient(
-		hsl(from var(--primary-color) h s calc(l - 42)), var(--secondary-color) 120%
-	);
-	height: 100vh;
-	background-attachment: fixed;
-    z-index: 2;
-}
-.retro::after {
-	content: " ";
-	position: fixed;
-    left: 0; top: 0; right: 0; bottom: 0;
-	width: 100%;
-	height: 100%;
-    background-size: 128px 128px;
-    background-image:
-        linear-gradient(to right, var(--secondary-color) 2px, transparent 1px),
-        linear-gradient(to bottom, var(--secondary-color) 2px, transparent 1px);
-    opacity: 0.2;
-    z-index: -2;
-}
-
-.text-shadow { text-shadow: 0 0 3px var(--primary-color); }
-.box-shadow { box-shadow: 0 0 3px var(--primary-color); }
-.box-shadow-secondary { box-shadow: 0 0 3px var(--secondary-color); }
 
 .art-gallery {
 	display: grid;
